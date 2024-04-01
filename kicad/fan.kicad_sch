@@ -1192,13 +1192,13 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 104.14) (xy 67.31 104.14)
+			(xy 67.31 109.22) (xy 124.46 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "353c0ee1-5b21-4cef-830c-ce0fcc271104")
+		(uuid "8446f6b1-6c7c-46ac-a85d-4fda027ed61a")
 	)
 	(wire
 		(pts
@@ -1240,16 +1240,6 @@
 		)
 		(uuid "d80cfcf0-3b1e-4cfa-9f2d-87ea59e14ee6")
 	)
-	(wire
-		(pts
-			(xy 67.31 104.14) (xy 67.31 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f01cc908-0d3a-40b3-b84d-c94e5c414b02")
-	)
 	(rectangle
 		(start 106.68 69.85)
 		(end 176.53 120.65)
@@ -1276,7 +1266,7 @@
 	)
 	(hierarchical_label "PWM"
 		(shape input)
-		(at 67.31 105.41 180)
+		(at 67.31 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font

@@ -2102,22 +2102,24 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push_Dual"
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 7.62 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SW_Push_Dual"
-				(at 0 -6.35 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2125,7 +2127,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2134,7 +2136,7 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2142,7 +2144,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Push button switch, generic, symbol, four pins"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2160,20 +2162,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Push_Dual_0_1"
+			(symbol "SW_Push_0_1"
 				(circle
-					(center -2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 2.54)
+					(center -2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2185,7 +2176,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.508) (xy 0 -1.016)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -2197,79 +2188,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.508) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.016) (xy 0 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.032) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.048) (xy 0 3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 0 5.588)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 3.81) (xy -2.54 3.81)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2280,18 +2199,7 @@
 					)
 				)
 				(circle
-					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
+					(center 2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2302,7 +2210,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -2320,7 +2228,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -2335,55 +2243,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SW_Push_Dual_1_1"
-				(rectangle
-					(start -3.175 5.715)
-					(end 3.175 -4.445)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 			)
@@ -2792,16 +2651,8 @@
 		(uuid "5e77e5e1-fd60-4aef-9ddb-3f7af3a4dcfc")
 	)
 	(no_connect
-		(at 63.5 121.92)
-		(uuid "891b77e5-c1e8-4188-9b2a-4887fe70d893")
-	)
-	(no_connect
 		(at 154.94 114.3)
 		(uuid "8d6ceeb8-9d9e-4e54-99d9-7cdc4ea31ed1")
-	)
-	(no_connect
-		(at 53.34 121.92)
-		(uuid "a2ced3c7-b077-4972-bc3f-d3b9094afca3")
 	)
 	(no_connect
 		(at 154.94 91.44)
@@ -3051,6 +2902,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 127) (xy 69.85 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2da0da8-b272-427e-9279-b5ce5871bd69")
+	)
+	(wire
+		(pts
 			(xy 69.85 127) (xy 95.25 127)
 		)
 		(stroke
@@ -3178,16 +3039,6 @@
 			(type default)
 		)
 		(uuid "d79a159a-46ff-4140-86ad-01e61ecdd313")
-	)
-	(wire
-		(pts
-			(xy 63.5 127) (xy 69.85 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9b5deda-bc57-4b03-9172-a658d79d09ef")
 	)
 	(wire
 		(pts
@@ -5327,6 +5178,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 58.42 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "838d304b-8d2e-4f99-938f-27397492710b")
+		(property "Reference" "SW1"
+			(at 58.42 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 58.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+			(at 58.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 58.42 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "89f0008d-2040-4fea-a4be-e0326728c60b")
+		)
+		(pin "1"
+			(uuid "0c41dcfc-2a7d-4881-bb76-a6dcf4c82630")
+		)
+		(instances
+			(project "multifan-i2c-controller"
+				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 76.2 35.56 0)
 		(unit 1)
@@ -6231,7 +6150,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
 			(at 39.37 34.29 0)
 			(effects
 				(font
@@ -6580,7 +6499,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_HC49-U_Vertical"
 			(at 182.88 85.09 0)
 			(effects
 				(font
@@ -6817,80 +6736,6 @@
 			(project "multifan-i2c-controller"
 				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24"
 					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_Dual")
-		(at 58.42 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f35b36c7-71ae-4dff-b54c-9c504846fbd1")
-		(property "Reference" "SW1"
-			(at 58.42 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push_Dual"
-			(at 58.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, symbol, four pins"
-			(at 58.42 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc27e45b-eddf-472b-8554-732548b77064")
-		)
-		(pin "4"
-			(uuid "4483f13e-43aa-4414-8507-210e3ef6590b")
-		)
-		(pin "2"
-			(uuid "25cda38a-9b83-47c2-9df1-1e0c0e8c2620")
-		)
-		(pin "3"
-			(uuid "3b808a64-f209-4282-b23d-5e370273b464")
-		)
-		(instances
-			(project "multifan-i2c-controller"
-				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
