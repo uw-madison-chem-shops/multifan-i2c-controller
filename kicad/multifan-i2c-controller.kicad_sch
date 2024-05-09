@@ -6,7 +6,7 @@
 	(paper "USLetter")
 	(title_block
 		(title "Multifan I2C Controller")
-		(date "2024-03-27")
+		(date "2024-05-09")
 		(rev "A")
 		(company "University of Wisconsin-Madison")
 		(comment 1 "Department of Chemistry")

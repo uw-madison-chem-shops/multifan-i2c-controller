@@ -516,7 +516,7 @@
 				)
 			)
 		)
-		(symbol "Transistor_FET:2N7000"
+		(symbol "Transistor_FET:2N7002"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -530,7 +530,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2N7000"
+			(property "Value" "2N7002"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -539,7 +539,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -550,7 +550,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -560,7 +560,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
+			(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -569,7 +569,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "N-Channel MOSFET Logic-Level"
+			(property "ki_keywords" "N-Channel Switching MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -578,7 +578,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -587,7 +587,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2N7000_0_1"
+			(symbol "2N7002_0_1"
 				(polyline
 					(pts
 						(xy 0.254 0) (xy -2.54 0)
@@ -754,11 +754,11 @@
 					)
 				)
 			)
-			(symbol "2N7000_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
+			(symbol "2N7002_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "S"
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -773,10 +773,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "G"
+					(name "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1152,13 +1152,13 @@
 		(at 119.38 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b03e37b0-b647-4e4f-be31-835237c647f2")
+		(uuid "811b3a9f-0a96-4b90-9123-1d52b42319d3")
 	)
 	(junction
 		(at 132.08 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d4b89c98-3b9f-4c4f-8008-a61e1446da2b")
+		(uuid "c26ac7ee-90b5-4a32-9e66-bc075263bb38")
 	)
 	(wire
 		(pts
@@ -1837,6 +1837,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 129.54 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e64741a-3825-4240-87d1-f7901bcd4178")
+		(property "Reference" "Q1"
+			(at 135.89 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 135.89 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 134.62 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 134.62 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 129.54 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "1bf14ab7-5f78-424a-8386-6ed226afa987")
+		)
+		(pin "2"
+			(uuid "866b647b-1d34-4848-9950-89157327b018")
+		)
+		(pin "1"
+			(uuid "947b213a-eaef-4e08-bb74-df269bbe2134")
+		)
+		(instances
+			(project "multifan-i2c-controller"
+				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/31b761fd-990f-4530-8b3a-6741ab18454d"
+					(reference "Q1")
+					(unit 1)
+				)
+				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/be8049d5-6f29-4d60-8441-bb89437ffa26"
+					(reference "Q2")
+					(unit 1)
+				)
+				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/da56f3fa-ae89-4bf3-a7d8-c42abaec7938"
+					(reference "Q3")
+					(unit 1)
+				)
+				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/75bddcd0-0fc4-4a51-b004-02588bb9cb75"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 119.38 80.01 0)
 		(unit 1)
@@ -1919,95 +2007,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7000")
-		(at 129.54 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a20f56e-38fd-4e8e-b798-20b45b6226a0")
-		(property "Reference" "Q2"
-			(at 135.89 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7000"
-			(at 135.89 110.4899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 134.62 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
-			(at 134.62 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
-			(at 129.54 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93ba7961-1da8-4ec6-9409-9052f61701b9")
-		)
-		(pin "3"
-			(uuid "c7e9b76f-e1f0-4541-ad8d-5a799e290405")
-		)
-		(pin "2"
-			(uuid "12582d12-62f4-4ce4-b435-507c8572145f")
-		)
-		(instances
-			(project "multifan-i2c-controller"
-				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/31b761fd-990f-4530-8b3a-6741ab18454d"
-					(reference "Q2")
-					(unit 1)
-				)
-				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/be8049d5-6f29-4d60-8441-bb89437ffa26"
-					(reference "Q4")
-					(unit 1)
-				)
-				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/da56f3fa-ae89-4bf3-a7d8-c42abaec7938"
-					(reference "Q6")
-					(unit 1)
-				)
-				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/75bddcd0-0fc4-4a51-b004-02588bb9cb75"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7000")
+		(lib_id "Transistor_FET:2N7002")
 		(at 121.92 88.9 0)
 		(mirror y)
 		(unit 1)
@@ -2015,8 +2015,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c7391cb7-45d9-48f8-9cfc-e80064536021")
-		(property "Reference" "Q1"
+		(uuid "d10b4e81-cb3a-4c2c-a8f7-dbde22e3796e")
+		(property "Reference" "Q9"
 			(at 115.57 87.6299 0)
 			(effects
 				(font
@@ -2025,7 +2025,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N7000"
+		(property "Value" "2N7002"
 			(at 115.57 90.1699 0)
 			(effects
 				(font
@@ -2034,7 +2034,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 116.84 90.805 0)
 			(effects
 				(font
@@ -2045,7 +2045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/70226/70226.pdf"
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
 			(at 116.84 92.71 0)
 			(effects
 				(font
@@ -2055,7 +2055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.2A Id, 200V Vds, N-Channel MOSFET, 2.6V Logic Level, TO-92"
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
 			(at 121.92 88.9 0)
 			(effects
 				(font
@@ -2064,31 +2064,31 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "940e9b96-29cb-43d8-baa6-52cfc3f2d304")
-		)
 		(pin "3"
-			(uuid "f88cc064-eeeb-4f4f-ba12-e453a49b96a0")
+			(uuid "e3c66470-e7d7-43ec-8065-e49511abddb4")
 		)
 		(pin "2"
-			(uuid "ebd88886-c81c-4171-b623-b403cf6fe890")
+			(uuid "8df833fc-7c68-40c1-8d41-3d41b5c662f2")
+		)
+		(pin "1"
+			(uuid "81f1dbaa-4858-4320-9a45-507916af05de")
 		)
 		(instances
 			(project "multifan-i2c-controller"
 				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/31b761fd-990f-4530-8b3a-6741ab18454d"
-					(reference "Q1")
+					(reference "Q9")
 					(unit 1)
 				)
 				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/be8049d5-6f29-4d60-8441-bb89437ffa26"
-					(reference "Q3")
+					(reference "Q10")
 					(unit 1)
 				)
 				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/da56f3fa-ae89-4bf3-a7d8-c42abaec7938"
-					(reference "Q5")
+					(reference "Q11")
 					(unit 1)
 				)
 				(path "/a9a5da40-a42e-45e4-ab10-820f7b034c24/75bddcd0-0fc4-4a51-b004-02588bb9cb75"
-					(reference "Q7")
+					(reference "Q12")
 					(unit 1)
 				)
 			)
